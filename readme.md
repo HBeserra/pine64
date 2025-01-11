@@ -39,3 +39,6 @@ The Pine A64+ is a old but stil powerfull board, the suport for the processor an
 
 `System on Chip (SoC)` is an integrated circuit that consolidates all components of a computer or other electronic system into a single chip. It typically includes a CPU, memory, input/output ports, and secondary storage – all on a single substrate.
 
+# Thanks
+
+[@mdaser](github.com/mdaser/pine64/)
