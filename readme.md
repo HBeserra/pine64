@@ -1,11 +1,11 @@
+![Pine64 + Board](./.content/pine_a64.jpg)
 # Pine A64+ Custom Linux From Scratch
 
 Pine A64+ is a arm64 SBC with a allWinner SOC, this repo aims to provide a comprehensive guide on building a custom Linux system for this board.
 
 ## The Problem
 
-The Pine A64+ is a old but stil powerfull board, the support for the processor and the board is , I'm using this repo to document my learning process in embedded linux.
-
+The Pine A64+ is a old but still powerful board, the support for the processor and the board is low, I'm using this repo to document my learning process in embedded linux.
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ To get started, you'll need the following:
 - MicroSD card (at least 8GB)
 - Serial console cable (optional but recommended)
 - A host computer running Linux
-- 7" LCD Display (optional but recommended, I will try to add suppot to this device)
+- 7" LCD Display (optional but recommended, I will try to add support to this device)
 
 ## Objectives
 
@@ -24,14 +24,10 @@ To get started, you'll need the following:
 - Compile the Kernel
 - Build the File System
 - Build the Bootloader
-- Boot the board (whitout changes)
+- Boot the board (without changes)
 - Add a dummy device to the device tree
 - Add simple device (GPIO or LEDs)
 - Add the 7" LCD display
-
-## The Problem
-
-The Pine A64+ is a old but stil powerfull board, the suport for the processor and the board is low, I'm using this repo to document my learning process in embedded linux.
 
 # Terms 
 
