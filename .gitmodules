@@ -1,6 +1,0 @@
-[submodule "50-buildroot"]
-	path = 50-buildroot
-	url = https://gitlab.com/buildroot.org/buildroot.git
-[submodule "40-armbian"]
-	path = 40-armbian
-	url = https://github.com/armbian/build.git
