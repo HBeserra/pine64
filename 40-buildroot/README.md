@@ -8,7 +8,8 @@ The BuildRoot projects allows to store project specific files outside the buildr
 Install the required tools for the buildroot project
 
 ```bash
-sudo apt-get install build-essential ncurses-base ncurses-bin dialog libncurses5-dev file  
+sudo apt update
+sudo apt install build-essential ncurses-base ncurses-bin dialog libncurses5-dev file  
 ```
 
 ### Download BuildRoot
@@ -17,6 +18,7 @@ Download the buildroot source code from the [buildroot website](https://buildroo
 ```bash
 wget https://buildroot.org/downloads/buildroot-2024.11.1.tar.gz 
 tar -xvf buildroot-2024.11.1.tar.gz
+rm buildroot-2024.11.1.tar.gz
 cd buildroot-2024.11.1
 ```
 
