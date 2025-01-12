@@ -24,20 +24,42 @@ cd buildroot-2024.11.1
 
 ### Configure the buildroot to use the project file
 
+Load the project specific configuration files by including the `BR2_EXTERNAL` variable in the make command, 
+the `pine64_plus_defconfig` is the custom configuration file for the pine64_plus board.
 
 ´´´bash
-make BR2_EXTERNAL=</path/to/40-buildroot> menuconfig
+make BR2_EXTERNAL=</path/to/40-buildroot> pine64_plus_defconfig
 ```
 
-After that the project specific configuration files will be used without having to include the `BR2_EXTERNAL` variable in the make command.
+Now you can build the project using the `make` command. This will download the required packages, build the toolchain, kernel, u-boot and rootfs.
 
-### Build the project
+> Note: The build process may take a while depending on the system configuration.
 
-ToDO: Add the steps to build the project
+You can use the make menuconfig to customize the buildroot configuration
+
 
 ```bash
 make
 ```
+
+After the build is complete, the output files will be available in the `buildroot-2024.11.1/output/images` directory.
+
+This default configuration will allow you to start experimenting with the
+buildroot environment for the Pine64. With the current configuration
+it will bring-up the board, and allow access through the serial console.
+
+### Flashing the image to the SD card
+
+To flash the image to the SD card, insert the SD card into the computer and run the following command:
+
+```bash
+sudo dd if=output/images/sdcard.img of=/dev/sdX bs=4M
+```
+
+Replace `/dev/sdX` with the correct device name of the SD card.
+
+Insert the micro SDcard in your Pine64 and power it up. The console
+is on the serial line, 115200 8N1.
 
 ## 2. Customizing the BuildRoot, U-Boot and Kernel
  ToDo: Add the steps to customize the buildroot, u-boot and kernel

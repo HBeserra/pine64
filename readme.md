@@ -29,12 +29,27 @@ To get started, you'll need the following:
 - Add simple device (GPIO or LEDs)
 - Add the 7" LCD display
 
-# Terms 
+# Terms
 
-`Device Tree Source (DTS)` is a description of the hardware components in a system and their configuration. It is used by the Linux kernel to manage and interface with the hardware.
+- **Device Tree Source (DTS)**: A description of the hardware components in a system and their configuration. It is used by the Linux kernel to manage and interface with the hardware.
+- **System on Chip (SoC)**: An integrated circuit that consolidates all components of a computer or other electronic system into a single chip. It typically includes a CPU, memory, input/output ports, and secondary storage – all on a single substrate.
+- **Single Board Computer (SBC)**: A complete computer built on a single circuit board, with microprocessor(s), memory, input/output (I/O), and other features required of a functional computer.
+- **Bootloader**: A small program that loads the operating system into the computer's memory when the system is powered on.
+- **Toolchain**: A set of programming tools used to create a software application. In the context of embedded systems, it typically includes a compiler, linker, and debugger.
+- **Kernel**: The core part of an operating system, managing system resources and communication between hardware and software components.
+- **File System**: A method and data structure that the operating system uses to control how data is stored and retrieved on a storage device.
+- **GPIO (General-Purpose Input/Output)**: A generic pin on an integrated circuit whose behavior (including whether it is an input or output pin) can be controlled by the user at runtime.
 
-`System on Chip (SoC)` is an integrated circuit that consolidates all components of a computer or other electronic system into a single chip. It typically includes a CPU, memory, input/output ports, and secondary storage – all on a single substrate.
 
 # Thanks
 
 [@mdaser](github.com/mdaser/pine64/)
+
+# References
+
+- [Pine64](https://www.pine64.org/)
+- [AllWinner A64](https://linux-sunxi.org/A64)
+- [Linux Kernel](https://www.kernel.org/)
+- [BuildRoot](https://buildroot.org/)
+- [Device Tree](https://www.devicetree.org/)
+- [Manual build](https://wiki.amarulasolutions.com/bsp/sunxi/a64/pine.html)
