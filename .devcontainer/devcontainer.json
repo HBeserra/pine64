@@ -14,6 +14,8 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
 
+	"postCreateCommand": "apt-get update && apt-get install -y curl git build-essential ncurses-base ncurses-bin dialog libncurses5-dev file wget tar",
+
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
