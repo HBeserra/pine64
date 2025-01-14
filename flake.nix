@@ -21,6 +21,7 @@
               pkg-config
               unzip
               wget
+              libxcrypt
               pkgsCross.aarch64-multiplatform.gccStdenv.cc
             ] ++ pkgs.linux.nativeBuildInputs);
         }).env;
