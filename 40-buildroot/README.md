@@ -28,7 +28,7 @@ Load the project specific configuration files by including the `BR2_EXTERNAL` va
 the `pine64_plus_defconfig` is the custom configuration file for the pine64_plus board.
 
 ´´´bash
-make BR2_EXTERNAL=</path/to/40-buildroot> pine64_plus_defconfig
+make BR2_EXTERNAL=../40-buildroot pine64_plus_defconfig
 ```
 
 Now you can build the project using the `make` command. This will download the required packages, build the toolchain, kernel, u-boot and rootfs.
