@@ -62,4 +62,14 @@ Insert the micro SDcard in your Pine64 and power it up. The console
 is on the serial line, 115200 8N1.
 
 ## 2. Customizing the BuildRoot, U-Boot and Kernel
- ToDo: Add the steps to customize the buildroot, u-boot and kernel
+  After the initial build, you can customize BuildRoot, U-Boot, and the kernel by modifying the configuration files in the `40-buildroot` directory. To apply the changes, run the `make` command again to rebuild the project with the new configurations. You can use the `make <package>-rebuild` command to rebuild a specific package. For example:
+
+  ```bash
+  make uboot-rebuild
+  make linux-rebuild
+  make
+  ```
+
+  If you change the defconfig file or add new files to the project, use the `make pine64_plus_defconfig` command to regenerate the configuration files.
+
+  To clean the build directory and start from scratch, use the `make clean` command.

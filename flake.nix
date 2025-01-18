@@ -22,6 +22,7 @@
               unzip
               wget
               libxcrypt
+              tio
               pkgsCross.aarch64-multiplatform.gccStdenv.cc
             ] ++ pkgs.linux.nativeBuildInputs);
         }).env;

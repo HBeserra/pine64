@@ -9,9 +9,15 @@
 
 	/* TODO: Camera, touchscreen, etc. */
 
-	clock_dummy_text: qcom,rpmcc {
-		compatible = "qcom,dummycc";
-		#clock-cells = <1>;
+	leds {
+		compatible = "gpio-leds";
+		led0 {
+			label = "pine64:green:led0";
+			gpios = <&pio 2 7 GPIO_ACTIVE_HIGH>; /* PC7 / GPIO 17 */
+			linux,default-trigger = "heartbeat";
+			default-state = "off";
+			status = "okay";
+		};
 	};
 };
 
